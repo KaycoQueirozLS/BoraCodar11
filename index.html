@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma Vertigo</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="page" class="flex">
+
+    <div>
+
+      <header><a href="/index.html"><img src="/assets/logo (1).svg" alt=""></a></header>
+
+      <main>
+
+      <div class="headline">
+
+        <div>
+
+          <h1>Acesse a plataforma</h1>
+
+          <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+
+        </div>
+
+      </div>
+
+      <form>
+
+        <div class="input-wrapper">
+          <label for="email">E-mail <br> </label>
+          <input id="email" type="email" name="email" required placeholder="Digite seu e-mail"/>
+        </div>
+
+        <div class="input-wrapper">
+
+          <div class="label-wrapper  flex">
+            <label for="senha">Senha</label>
+          </div>
+
+          <input type="password" id="senha" placeholder="Digite sua senha">
+
+          <img onclick="togglePassword()" class="eye" src="/assets/eye-off.svg" alt="">
+          <img onclick="togglePassword()" class="eye hide" src="/assets/eye.svg" alt="">
+        </div>
+
+        <div class="ea"><a href="#">Esqueceu a senha?</a></div>
+
+        <button type="submit">Entrar</button>
+
+        <div class="help">Ainda não tem uma conta?
+          <a href="#">Inscreva-se</a>
+        </div>
+
+      </form>
+
+
+      </main>
+
+    </div>
+
+    <img class="img-background" src="/assets/img.jpg" alt="">
+
+  </div>
+
+  <script>
+    function togglePassword(){
+      document.querySelectorAll(".eye")
+       .forEach(eye => eye.classList.toggle("hide"))
+    
+       const type = senha.getAttribute("type") == 
+       "password" ? "text" : "password"
+
+        senha.setAttribute("type", type)
+      }
+
+  </script>
+  
+</body>
+</html>
