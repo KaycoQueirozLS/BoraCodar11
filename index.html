@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plataforma Vertigo</title>
   <link href="https://kaycoqueirozls.github.io/BoraCodar11/style.css" rel="stylesheet"/>
+  <link rel="icon" href="https://i.ibb.co/NVPfZgZ/Vector.png">
   <script src="https://kaycoqueirozls.github.io/BoraCodar11/scripts.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,6 +71,18 @@
     <img class="img-background" src="/assets/img.jpg" alt="">
 
   </div>
+  
+    <script>
+    function togglePassword(){
+      document.querySelectorAll(".eye")
+       .forEach(eye => eye.classList.toggle("hide"))
+    
+       const type = senha.getAttribute("type") == 
+       "password" ? "text" : "password"
+
+        senha.setAttribute("type", type)
+      }
+  </script>
   
 </body>
 </html>
